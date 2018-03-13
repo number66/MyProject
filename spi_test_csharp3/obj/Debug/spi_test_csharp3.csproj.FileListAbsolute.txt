@@ -8,3 +8,33 @@ D:\Documents and settings\Cactus HP\Dropbox\work\spi_test_csharp3\spi_test_cshar
 D:\Documents and settings\Cactus HP\Dropbox\work\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.exe
 D:\Documents and settings\Cactus HP\Dropbox\work\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.pdb
 D:\Documents and settings\Cactus HP\Dropbox\work\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.Form1.resources
+H:\ОБМЕН\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.exe
+H:\ОБМЕН\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.pdb
+H:\ОБМЕН\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\bin\Debug\spi_test_csharp3.exe
+H:\ОБМЕН\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\bin\Debug\spi_test_csharp3.pdb
+H:\ОБМЕН\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\bin\Debug\FTD2XX_NET.dll
+H:\ОБМЕН\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\bin\Debug\FTD2XX_NET.xml
+H:\ОБМЕН\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.csprojResolveAssemblyReference.cache
+H:\ОБМЕН\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.Form1.resources
+H:\ОБМЕН\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.Properties.Resources.resources
+H:\ОБМЕН\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.csproj.GenerateResource.Cache
+\\Oleg\обмен2\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.exe
+\\Oleg\обмен2\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.csprojResolveAssemblyReference.cache
+\\Oleg\обмен2\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.Form1.resources
+\\Oleg\обмен2\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.Properties.Resources.resources
+\\Oleg\обмен2\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.csproj.GenerateResource.Cache
+\\Oleg\обмен2\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\bin\Debug\spi_test_csharp3.exe
+\\Oleg\обмен2\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\bin\Debug\spi_test_csharp3.pdb
+\\Oleg\обмен2\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\bin\Debug\FTD2XX_NET.dll
+\\Oleg\обмен2\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\bin\Debug\FTD2XX_NET.xml
+\\Oleg\обмен2\Конструктора\Гусев\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.pdb
+C:\Users\Director\Desktop\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.exe
+C:\Users\Director\Desktop\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.pdb
+C:\Users\Director\Desktop\spi_test_csharp3\spi_test_csharp3\bin\Debug\spi_test_csharp3.exe
+C:\Users\Director\Desktop\spi_test_csharp3\spi_test_csharp3\bin\Debug\spi_test_csharp3.pdb
+C:\Users\Director\Desktop\spi_test_csharp3\spi_test_csharp3\bin\Debug\FTD2XX_NET.dll
+C:\Users\Director\Desktop\spi_test_csharp3\spi_test_csharp3\bin\Debug\FTD2XX_NET.xml
+C:\Users\Director\Desktop\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.Form1.resources
+C:\Users\Director\Desktop\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.Properties.Resources.resources
+C:\Users\Director\Desktop\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.csproj.GenerateResource.Cache
+C:\Users\Director\Desktop\spi_test_csharp3\spi_test_csharp3\obj\Debug\spi_test_csharp3.csprojResolveAssemblyReference.cache

@@ -30,28 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ButtonOpen = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
             this.OpenPortBar = new System.Windows.Forms.ProgressBar();
             this.SaveButton = new System.Windows.Forms.Button();
             this.ReadButton = new System.Windows.Forms.Button();
             this.ViewButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(13, 70);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(694, 361);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // ButtonOpen
             // 
-            this.ButtonOpen.Location = new System.Drawing.Point(12, 12);
+            this.ButtonOpen.Location = new System.Drawing.Point(3, 3);
             this.ButtonOpen.Name = "ButtonOpen";
             this.ButtonOpen.Size = new System.Drawing.Size(42, 23);
             this.ButtonOpen.TabIndex = 1;
@@ -62,7 +53,7 @@
             // CloseButton
             // 
             this.CloseButton.Enabled = false;
-            this.CloseButton.Location = new System.Drawing.Point(60, 12);
+            this.CloseButton.Location = new System.Drawing.Point(3, 61);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(42, 23);
             this.CloseButton.TabIndex = 2;
@@ -72,17 +63,17 @@
             // 
             // OpenPortBar
             // 
-            this.OpenPortBar.Location = new System.Drawing.Point(13, 41);
+            this.OpenPortBar.Location = new System.Drawing.Point(3, 32);
             this.OpenPortBar.Name = "OpenPortBar";
-            this.OpenPortBar.Size = new System.Drawing.Size(89, 23);
+            this.OpenPortBar.Size = new System.Drawing.Size(42, 23);
             this.OpenPortBar.TabIndex = 3;
             // 
             // SaveButton
             // 
             this.SaveButton.Enabled = false;
-            this.SaveButton.Location = new System.Drawing.Point(190, 13);
+            this.SaveButton.Location = new System.Drawing.Point(3, 119);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(75, 23);
+            this.SaveButton.Size = new System.Drawing.Size(42, 23);
             this.SaveButton.TabIndex = 4;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = true;
@@ -90,9 +81,9 @@
             // 
             // ReadButton
             // 
-            this.ReadButton.Location = new System.Drawing.Point(109, 13);
+            this.ReadButton.Location = new System.Drawing.Point(3, 90);
             this.ReadButton.Name = "ReadButton";
-            this.ReadButton.Size = new System.Drawing.Size(75, 23);
+            this.ReadButton.Size = new System.Drawing.Size(42, 23);
             this.ReadButton.TabIndex = 5;
             this.ReadButton.Text = "Read";
             this.ReadButton.UseVisualStyleBackColor = true;
@@ -100,44 +91,55 @@
             // 
             // ViewButton
             // 
-            this.ViewButton.Location = new System.Drawing.Point(190, 41);
+            this.ViewButton.Location = new System.Drawing.Point(3, 148);
             this.ViewButton.Name = "ViewButton";
-            this.ViewButton.Size = new System.Drawing.Size(75, 23);
+            this.ViewButton.Size = new System.Drawing.Size(42, 23);
             this.ViewButton.TabIndex = 6;
             this.ViewButton.Text = "View";
             this.ViewButton.UseVisualStyleBackColor = true;
             this.ViewButton.Click += new System.EventHandler(this.ViewButton_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Location = new System.Drawing.Point(51, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 600);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(830, 433);
+            this.ClientSize = new System.Drawing.Size(867, 622);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ViewButton);
             this.Controls.Add(this.ReadButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.OpenPortBar);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.ButtonOpen);
-            this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button ButtonOpen;
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.ProgressBar OpenPortBar;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button ReadButton;
         private System.Windows.Forms.Button ViewButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

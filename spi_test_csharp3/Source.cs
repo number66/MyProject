@@ -10,9 +10,11 @@ namespace spi_test_csharp3
     class Source
     {
             const uint BufferSize = 64000;
-            const uint Packages = 8;
+            const uint Packages = 1;
             byte[] tx_buffer = new byte[1];
             byte[] rx_buffer = new byte[1];
+            byte[] tx_buffer_com = new byte[1];
+            byte[] rx_buffer_com = new byte[1];
             byte[] tx_buffer1 = new byte[BufferSize];
             byte[] rx_buffer1 = new byte[BufferSize];
             byte[] rx_buffer2 = new byte[BufferSize * Packages];
@@ -63,7 +65,7 @@ namespace spi_test_csharp3
                 SPIChannelConfig channelConf = new SPIChannelConfig();
 
                 channelConf.ClockRate = 30*1000000;
-                channelConf.LatencyTimer = 2;
+                channelConf.LatencyTimer = 1;
                 channelConf.configOptions =(UInt32)(SPI_CONFIG_OPTION_MODE.MODE0) | (UInt32)(SPI_CONFIG_OPTION_CS.DBUS3) | (UInt32)(SPI_CONFIG_OPTION_CS_ACTIVE.LOW);
                 channelConf.Pins = 0;
 
@@ -83,10 +85,10 @@ namespace spi_test_csharp3
 
             for (int i = 1; i <= Packages; i++)
             {
-                tx_buffer[0] = (byte)i;
+                tx_buffer_com[0] = (byte)i;
+              
                 if (FTstat == FTDI.FT_STATUS.FT_OK)
-                    FTstat = libMPSSESPI.SPI_ReadWrite(ft232handle, rx_buffer, tx_buffer, 1, ref transferCount, options);
-                
+                    FTstat = libMPSSESPI.SPI_ReadWrite(ft232handle, rx_buffer_com, tx_buffer_com, 1, ref transferCount, options);       
 
                 if (FTstat == FTDI.FT_STATUS.FT_OK)
                     FTstat = libMPSSESPI.SPI_ReadWrite(ft232handle, rx_buffer1, tx_buffer1, BufferSize, ref transferCount, options);
@@ -95,16 +97,18 @@ namespace spi_test_csharp3
                     for (int j = 0; j < BufferSize; j++)
                         rx_buffer2[(i - 1) * BufferSize + j] = rx_buffer1[j];
             }
-                    
-
-           
+         
             return rx_buffer2;
          }
             
             
         public void Close()
         {
-            libMPSSESPI.Cleanup_libMPSSE(); 
+            FTstat = libMPSSESPI.SPI_CloseChannel(ft232handle);
+            if (FTstat == FTDI.FT_STATUS.FT_OK)
+            {
+                libMPSSESPI.Cleanup_libMPSSE();
+            }
         }   
             
 

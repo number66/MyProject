@@ -25,19 +25,26 @@ namespace spi_test_csharp3
         {
             Timer timer1 = new Timer();
             timer1.Tick += new EventHandler(timer1_tick);
-            timer1.Interval = 10; // C ВРЕМЕНЕМ ТАЙМЕРА ИГРАЕМСЯ, ЧТОБЫ НЕ БЫЛО КОЛЛИЗИИ!
+            timer1.Interval = 1; 
             timer1.Start();
         }
 
         public void timer1_tick(object sender, EventArgs e)
         {
-            if (!ReadButton.Enabled)
-            {  
-                using (MemoryStream mstream = new MemoryStream(NEW.loadImage()))
+            try
+            {
+                if (!ReadButton.Enabled)
                 {
-                   image = new Bitmap(mstream);
+                    using (MemoryStream mstream = new MemoryStream(NEW.loadImage()))
+                    {
+                        image = new Bitmap(mstream);
+                    }
+                    pictureBox1.Image = image;
                 }
-                pictureBox1.Image = image;
+            }
+            catch (ArgumentException)
+            {
+ 
             }
         }
 
@@ -62,6 +69,7 @@ namespace spi_test_csharp3
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
+
             using (FileStream fstream = new FileStream("C:\\ImageSPI.jpg", FileMode.OpenOrCreate))
             {
                 fstream.Write(NEW.loadImage(), 0, NEW.loadImage().Length);
@@ -94,5 +102,7 @@ namespace spi_test_csharp3
                 fstream.Close();
             }
         }
+
+       
     }
 }
